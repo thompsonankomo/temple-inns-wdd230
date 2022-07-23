@@ -1,0 +1,40 @@
+
+{
+    "name": "Nigeria Aba Temple",
+    "address" :"72-80 Okpu-Umuobo Rd,Abia State, Nigeria",
+    "email" : "",
+    "telephone": "+234 80 3903 4810",
+    "services" : "No Temple Closure,No Caffeteria Available",
+    "temple-closure": "saturday 20 August 2021",
+    "image-url": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg" 
+}
+{
+    "name": "South AfricA, Johannesburg Temple",
+    "address" :"7 Jubilee Rd,Parktown, South Africa",
+    "email" : "",
+    "telephone": "+27 11 645 1540",
+    "services" : "No Temple Closure,No Caffeteria Available",
+    "temple-closure": "saturday 20 August 2021",
+    "image-url": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg" 
+
+}
+{
+    "name": "Ghana, Accra Temple",
+    "address" :"57 Independence Avenue, Northridge, Accra",
+   
+    "telephone": "+233 302 650 123",
+    "services" : "No Temple Closure,No Caffeteria Available",
+    "temple-closure": "saturday 20 August 2021",
+    "image-url": "https://assets.ldscdn.org/87/5d/875db78e8219c9c6f476fd0fd88f444b986a0d0f/accra_ghana_temple_lds.jpeg" 
+
+}
+{
+    "name": "South Africa Durban Temple",
+    "address" :"2 Izinga Drive, Izinga Ridge, KwaMhlanga, Durban South Africa",
+   
+    "telephone": "+27 31 1420 0240",
+    "services" : "No Temple Closure,No Caffeteria Available",
+    "temple-closure": "saturday 20 August 2021",
+    "image-url": "https://assets.ldscdn.org/4c/6f/4c6fe7efd4a99ca8c9723d7c31cc3490c417cece/durban_south_africa_temple_exterior.png" 
+
+}
