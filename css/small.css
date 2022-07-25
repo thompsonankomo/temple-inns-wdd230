@@ -1,8 +1,8 @@
 :root {
-  --primary:rgb(43, 43, 3);
-  --secondary: orange;
-  --light:teal;
-  --dark:black;
+  --primary:teal;
+  --secondary: #6e6ce2ef;
+  --light:white;
+  --dark:#333;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
 }
 
@@ -11,20 +11,21 @@ body {
   margin: 30px 50px;
   line-height: 1.32;
   width:96%;
-  margin: 0 auto;
-  display:block;
-
-}
-main{
- width:100%; 
+  margin:0;
+  display:grid;
+  
 }
 
 .btn {
-  background: var(--dark);
-  color: var(--light);
+  background: var(--primary);
+  color:white;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
+  font-family:cursive;
+  font-weight:20;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 img {
@@ -32,15 +33,16 @@ img {
 
 }
 img#weather-icon{
-  background:yellow;
+  background:var(--lightgrey);
+  width: 150px;
+  height:100px;
+  
 }
 .wrapper {
   display: grid;
   grid-gap:30px;
 
 }
-
-/*navigation*/
 .main-nav ul {
   display: grid;
   grid-gap: 20px;
@@ -75,16 +77,15 @@ img#weather-icon{
   text-align: center;
   padding: 0;
 }
-
-/*top-container*/
 .top-container {
   display: grid;
   grid-gap: 20px;
-grid-auto-flow: column;
+grid-template-areas: 
+
+'showcase showcase top-box-a'
+'showcase showcase top-box-b';
 
 }
-
-/*showcase*/
 .showcase {
   grid-area: showcase;
   background: url(../images/luxury-bedrooms.jpg);
@@ -98,7 +99,7 @@ grid-auto-flow: column;
   margin:0;
 }
 
-.showcase background {
+.showcase background-img {
   width: 100%;
   object-fit: contain;
 }
@@ -106,16 +107,14 @@ grid-auto-flow: column;
 .showcase h1 {
   font-size: 4rem;
   margin-bottom: 0;
-  color: var(--light);
+  color: var(--primary);
 }
 
 .showcase p {
   font-size: 1.3rem;
   margin-top: 0;
-  color: var(--light);
+  color: var(--primary);
 }
-
-/*top box*/
 .top-box {
   background: var(--primary);
   display: grid;
@@ -136,8 +135,6 @@ grid-auto-flow: column;
 .top-box-b {
   grid-area: top-box-b;
 }
-
-/*boxes*/
 .boxes {
   display: grid;
   grid-gap: 20px;
@@ -185,23 +182,38 @@ grid-auto-flow: column;
   max-width: 100%;
   box-shadow: var(--shadow);
 }
-.portfolio h2{
+.portfolio h3{
   text-transform: uppercase;
   color: var(--secondary);
   background: var(--dark);
   
 }
-
+.contact h1{
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+}
+.social{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.social img{
+  width: 40px;
+  height:40px  ;
+}
 footer {
   margin-top: 2rem;
-  background: var(--dark);
-  color: var(--light);
+  background: var(--primary);
+  color: white;
   text-align: center;
   padding: 1rem;
 }
 
 /*Media Queries*/ly
-@media(max-width:600px) {
+@media only screen and (max-width:600px) {
   .top-container {
     grid-template-areas:
       'showcase showcase'
@@ -259,8 +271,12 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: var(--primary);
+  background-color:var(--primary);
   color: #fff;
+}
+.social img{
+ display: flex;
+ justify-items: end; 
 }
 
 .nav-links a {
@@ -270,6 +286,7 @@ footer {
 /* LOGO */
 .logo {
   font-size: 32px;
+  border-radius: 30px;
 }
 
 .menu {
@@ -432,10 +449,12 @@ form label .top input:required:valid {
 }
 
 .navbar img {
-  width: 200px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   padding: 0;
   align-items: center;
+  border-radius: 60px;
+  border: 1px solid blue;
 }
 
 * {

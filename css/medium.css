@@ -1,0 +1,10 @@
+@media only screen and (min-width:32.5em){
+    .top-container {
+        grid-template-areas:
+          'showcase'
+          'top-box-a'
+          'top-box-b';
+    }
+    
+
+}
